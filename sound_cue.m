@@ -127,7 +127,10 @@ try
                     
                 elseif keyCode(exit_key)
                     
-                    fprintf('Exit triggered at %s\n',datestr(now,'HH.MM.SS.FFF'));
+                    if USE_echo
+                        fprintf('Exit triggered at %s\n',datestr(now,'HH.MM.SS.FFF'));
+                    end
+                    
                     break
                     
                 end
